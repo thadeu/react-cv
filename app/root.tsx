@@ -45,6 +45,11 @@ export function Layout({ children }: { children: React.ReactNode }) {
   );
 }
 
+export function HydrateFallback() {
+  return <div className="flex flex-col items-center justify-center h-screen" />;
+}
+
+
 export default function App() {
   return <Outlet />;
 }
