@@ -6,9 +6,9 @@ export default function Header() {
           Jose Thadeu Esteves da Silva Junior
         </h1>
 
-        <div className="ml-2 print:hidden">
+        {/* <div className="ml-2 print:hidden">
           <a href="/resume.pdf" className="text-blue-500 underline" target="_blank" rel="noreferrer">Download PDF</a>
-        </div>
+        </div> */}
       </div>
 
       <ul className="flex flex-wrap gap-3">
