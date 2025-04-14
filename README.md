@@ -16,6 +16,18 @@ I've created a modern and exportable CV (resumé) using React Router.
 
 ## Getting Started
 
+### Links
+
+<a href="https://react-cv-9e9b8.web.app/" style="margin-bottom: 20px; display: block;">Live View</a>
+
+
+### Preview
+
+<center>
+  <img src="./public//resume.png" />
+</center>
+
+
 ### Installation
 
 Install the dependencies:
