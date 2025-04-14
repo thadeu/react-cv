@@ -1,8 +1,6 @@
-# Welcome to React Router!
+# Welcome to my CV (resumé)
 
-A modern, production-ready template for building full-stack React applications using React Router.
-
-[![Open in StackBlitz](https://developer.stackblitz.com/img/open_in_stackblitz.svg)](https://stackblitz.com/github/remix-run/react-router-templates/tree/main/default)
+I've created a modern and exportable CV (resumé) using React Router.
 
 ## Features
 
@@ -13,6 +11,8 @@ A modern, production-ready template for building full-stack React applications u
 - 🔒 TypeScript by default
 - 🎉 TailwindCSS for styling
 - 📖 [React Router docs](https://reactrouter.com/)
+- 📄 Exportable CV (resumé) using Puppeteer
+- 📦 PNPM to manage dependencies
 
 ## Getting Started
 
@@ -21,7 +21,7 @@ A modern, production-ready template for building full-stack React applications u
 Install the dependencies:
 
 ```bash
-npm install
+pnpm install
 ```
 
 ### Development
@@ -29,7 +29,7 @@ npm install
 Start the development server with HMR:
 
 ```bash
-npm run dev
+pnpm run dev
 ```
 
 Your application will be available at `http://localhost:5173`.
@@ -39,7 +39,7 @@ Your application will be available at `http://localhost:5173`.
 Create a production build:
 
 ```bash
-npm run build
+pnpm run build
 ```
 
 ## Deployment
@@ -49,39 +49,24 @@ npm run build
 To build and run using Docker:
 
 ```bash
-docker build -t my-app .
+docker build -t react-cv .
 
 # Run the container
-docker run -p 3000:3000 my-app
+docker run -p 3000:3000 react-cv
 ```
 
-The containerized application can be deployed to any platform that supports Docker, including:
+## Contributing
 
-- AWS ECS
-- Google Cloud Run
-- Azure Container Apps
-- Digital Ocean App Platform
-- Fly.io
-- Railway
+Once you've made your great commits (include tests, please):
 
-### DIY Deployment
+1. Fork this repository
+2. Create a topic branch - git checkout -b my_branch
+3. Push to your branch - git push origin my_branch
+4. Create a pull request
+5. That's it!
 
-If you're familiar with deploying Node applications, the built-in app server is production-ready.
+Please respect the indentation rules and code style. And use 2 spaces, not tabs. And don't touch the version thing or distribution files; this will be made when a new version is going to be release
 
-Make sure to deploy the output of `npm run build`
+## License
 
-```
-├── package.json
-├── package-lock.json (or pnpm-lock.yaml, or bun.lockb)
-├── build/
-│   ├── client/    # Static assets
-│   └── server/    # Server-side code
-```
-
-## Styling
-
-This template comes with [Tailwind CSS](https://tailwindcss.com/) already configured for a simple default starting experience. You can use whatever CSS framework you prefer.
-
----
-
-Built with ❤️ using React Router.
+The Dockerfile and associated scripts and documentation in this project are released under the [MIT License](LICENSE).
