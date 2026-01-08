@@ -1,12 +1,16 @@
 lockfileVersion: '6.0'
 
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
 dependencies:
   '@react-router/node':
     specifier: ^7.5.0
-    version: 7.5.0(react-router@7.5.0)(typescript@5.8.3)
+    version: 7.5.0(react-router@7.12.0)(typescript@5.8.3)
   '@react-router/serve':
     specifier: ^7.5.0
-    version: 7.5.0(react-router@7.5.0)(typescript@5.8.3)
+    version: 7.5.0(react-router@7.12.0)(typescript@5.8.3)
   isbot:
     specifier: ^5.1.17
     version: 5.1.26
@@ -17,13 +21,13 @@ dependencies:
     specifier: ^19.0.0
     version: 19.1.0(react@19.1.0)
   react-router:
-    specifier: ^7.5.0
-    version: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+    specifier: ^7.12.0
+    version: 7.12.0(react-dom@19.1.0)(react@19.1.0)
 
 devDependencies:
   '@react-router/dev':
     specifier: ^7.5.0
-    version: 7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.5.0)(typescript@5.8.3)(vite@5.4.17)
+    version: 7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.12.0)(typescript@5.8.3)(vite@5.4.17)
   '@react-router/fs-routes':
     specifier: ^7.5.0
     version: 7.5.0(@react-router/dev@7.5.0)(typescript@5.8.3)
@@ -44,7 +48,7 @@ devDependencies:
     version: 24.6.1(typescript@5.8.3)
   react-router-devtools:
     specifier: ^1.1.0
-    version: 1.1.10(@types/react-dom@19.1.2)(@types/react@19.1.0)(react-dom@19.1.0)(react-router@7.5.0)(react@19.1.0)(vite@5.4.17)
+    version: 1.1.10(@types/react-dom@19.1.2)(@types/react@19.1.0)(react-dom@19.1.0)(react-router@7.12.0)(react@19.1.0)(vite@5.4.17)
   tailwindcss:
     specifier: ^4.0.0
     version: 4.1.3
@@ -839,6 +843,7 @@ packages:
       tar-fs: 3.0.8
       yargs: 17.7.2
     transitivePeerDependencies:
+      - bare-abort-controller
       - bare-buffer
       - supports-color
     dev: true
@@ -1325,7 +1330,7 @@ packages:
     resolution: {integrity: sha512-HPwpGIzkl28mWyZqG52jiqDJ12waP11Pa1lGoiyUkIEuMLBP0oeK/C89esbXrxsky5we7dfd8U58nm0SgAWpVw==}
     dev: true
 
-  /@react-router/dev@7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.5.0)(typescript@5.8.3)(vite@5.4.17):
+  /@react-router/dev@7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.12.0)(typescript@5.8.3)(vite@5.4.17):
     resolution: {integrity: sha512-BSxuuMtm2YSwOzNTz9PJMFQzC33CzS6e6FXI/s/ZkcZIuYkujssQVG5q5nAuriKK17/T1xFLNeSoXVNI/+zCLA==}
     engines: {node: '>=20.0.0'}
     hasBin: true
@@ -1352,8 +1357,8 @@ packages:
       '@babel/traverse': 7.27.0
       '@babel/types': 7.27.0
       '@npmcli/package-json': 4.0.1
-      '@react-router/node': 7.5.0(react-router@7.5.0)(typescript@5.8.3)
-      '@react-router/serve': 7.5.0(react-router@7.5.0)(typescript@5.8.3)
+      '@react-router/node': 7.5.0(react-router@7.12.0)(typescript@5.8.3)
+      '@react-router/serve': 7.5.0(react-router@7.12.0)(typescript@5.8.3)
       arg: 5.0.2
       babel-dead-code-elimination: 1.0.10
       chokidar: 4.0.3
@@ -1367,7 +1372,7 @@ packages:
       picocolors: 1.1.1
       prettier: 2.8.8
       react-refresh: 0.14.0
-      react-router: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+      react-router: 7.12.0(react-dom@19.1.0)(react@19.1.0)
       semver: 7.7.1
       set-cookie-parser: 2.7.1
       typescript: 5.8.3
@@ -1388,7 +1393,7 @@ packages:
       - terser
     dev: true
 
-  /@react-router/express@7.5.0(express@4.21.2)(react-router@7.5.0)(typescript@5.8.3):
+  /@react-router/express@7.5.0(express@4.21.2)(react-router@7.12.0)(typescript@5.8.3):
     resolution: {integrity: sha512-GWlvMn6ap2Fcm4KvL73dR0ue3yUUSKYVPVhJCWClYmJYUJz1Pb67zRNdKAGgKRypSB8dZJloZkxq21q8wl1KEQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -1399,9 +1404,9 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@react-router/node': 7.5.0(react-router@7.5.0)(typescript@5.8.3)
+      '@react-router/node': 7.5.0(react-router@7.12.0)(typescript@5.8.3)
       express: 4.21.2
-      react-router: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+      react-router: 7.12.0(react-dom@19.1.0)(react@19.1.0)
       typescript: 5.8.3
 
   /@react-router/fs-routes@7.5.0(@react-router/dev@7.5.0)(typescript@5.8.3):
@@ -1414,12 +1419,12 @@ packages:
       typescript:
         optional: true
     dependencies:
-      '@react-router/dev': 7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.5.0)(typescript@5.8.3)(vite@5.4.17)
+      '@react-router/dev': 7.5.0(@react-router/serve@7.5.0)(@types/node@20.14.11)(react-router@7.12.0)(typescript@5.8.3)(vite@5.4.17)
       minimatch: 9.0.5
       typescript: 5.8.3
     dev: true
 
-  /@react-router/node@7.5.0(react-router@7.5.0)(typescript@5.8.3):
+  /@react-router/node@7.5.0(react-router@7.12.0)(typescript@5.8.3):
     resolution: {integrity: sha512-jvTledQVx8BqHt2hhkW0LxPiYsAqrNGRI1rjttr0fcynu1lQFU3HzKtZx9z9e+0fyqTKtwOOnaMIgGqdlpFPNQ==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
@@ -1430,26 +1435,26 @@ packages:
         optional: true
     dependencies:
       '@mjackson/node-fetch-server': 0.2.0
-      react-router: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+      react-router: 7.12.0(react-dom@19.1.0)(react@19.1.0)
       source-map-support: 0.5.21
       stream-slice: 0.1.2
       typescript: 5.8.3
       undici: 6.21.2
 
-  /@react-router/serve@7.5.0(react-router@7.5.0)(typescript@5.8.3):
+  /@react-router/serve@7.5.0(react-router@7.12.0)(typescript@5.8.3):
     resolution: {integrity: sha512-0ifLtFCcuhW57oPNFvdL0rA+xVuICVV8T/tfXm+qjgeTl/I72y+Y5rYrIb2MqIseT8OMQADRKA3ERRwKFFrYdw==}
     engines: {node: '>=20.0.0'}
     hasBin: true
     peerDependencies:
       react-router: 7.5.0
     dependencies:
-      '@react-router/express': 7.5.0(express@4.21.2)(react-router@7.5.0)(typescript@5.8.3)
-      '@react-router/node': 7.5.0(react-router@7.5.0)(typescript@5.8.3)
+      '@react-router/express': 7.5.0(express@4.21.2)(react-router@7.12.0)(typescript@5.8.3)
+      '@react-router/node': 7.5.0(react-router@7.12.0)(typescript@5.8.3)
       compression: 1.7.4
       express: 4.21.2
       get-port: 5.1.1
       morgan: 1.10.0
-      react-router: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+      react-router: 7.12.0(react-dom@19.1.0)(react@19.1.0)
       source-map-support: 0.5.21
     transitivePeerDependencies:
       - supports-color
@@ -1473,6 +1478,14 @@ packages:
 
   /@rollup/rollup-darwin-arm64@4.39.0:
     resolution: {integrity: sha512-lXQnhpFDOKDXiGxsU9/l8UEGGM65comrQuZ+lDcGUx+9YQ9dKpF3rSEGepyeR5AHZ0b5RgiligsBhWZfSSQh8Q==}
+    cpu: [arm64]
+    os: [darwin]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-darwin-arm64@4.55.1:
+    resolution: {integrity: sha512-p3grE2PHcQm2e8PSGZdzIhCKbMCw/xi9XvMPErPhwO17vxtvCN5FEA2mSLgmKlCjHGMQTP6phuQTYWUnKewwGg==}
     cpu: [arm64]
     os: [darwin]
     requiresBuild: true
@@ -1577,6 +1590,14 @@ packages:
 
   /@rollup/rollup-linux-x64-gnu@4.39.0:
     resolution: {integrity: sha512-t9jqYw27R6Lx0XKfEFe5vUeEJ5pF3SGIM6gTfONSMb7DuG6z6wfj2yjcoZxHg129veTqU7+wOhY6GX8wmf90dA==}
+    cpu: [x64]
+    os: [linux]
+    requiresBuild: true
+    dev: true
+    optional: true
+
+  /@rollup/rollup-linux-x64-gnu@4.55.1:
+    resolution: {integrity: sha512-a8G4wiQxQG2BAvo+gU6XrReRRqj+pLS2NGXKm8io19goR+K8lw269eTrPkSdDTALwMmJp4th2Uh0D8J9bEV1vg==}
     cpu: [x64]
     os: [linux]
     requiresBuild: true
@@ -1755,9 +1776,6 @@ packages:
     resolution: {integrity: sha512-C5Mc6rdnsaJDjO3UpGW/CQTHtCKaYlScZTly4JIu97Jxo/odCiH0ITnDXSJPTOrEKk/ycSZ0AOgTmkDtkOsvIA==}
     dev: true
 
-  /@types/cookie@0.6.0:
-    resolution: {integrity: sha512-4Kh9a6B2bQciAhf7FSuMRRkUWecJgJu9nPnx3yzpsfXX/c50REIqpHY4C82bXP90qrLtXtkDxTZosYO3UpOwlA==}
-
   /@types/d3-hierarchy@1.1.11:
     resolution: {integrity: sha512-lnQiU7jV+Gyk9oQYk0GGYccuexmQPTp08E0+4BidgFdiJivjEvf+esPSdZqCZ2C7UwTWejWpqetVaU8A+eX3FA==}
     dev: true
@@ -1900,11 +1918,23 @@ packages:
 
   /bare-events@2.5.4:
     resolution: {integrity: sha512-+gFfDkR8pj4/TrWCGUGWmJIkBwuxPS5F+a5yWjOHQt2hHvNZd5YLzadjmDUtFmMM4y429bnKLa8bYBMHcYdnQA==}
+    requiresBuild: true
     dev: true
     optional: true
 
-  /bare-fs@4.1.2:
-    resolution: {integrity: sha512-8wSeOia5B7LwD4+h465y73KOdj5QHsbbuoUfPBi+pXgFJIPuG7SsiOdJuijWMyfid49eD+WivpfY7KT8gbAzBA==}
+  /bare-events@2.8.2:
+    resolution: {integrity: sha512-riJjyv1/mHLIPX4RwiK+oW9/4c3TEUeORHKefKAKnZ5kyslbN+HXowtbaVEqt4IMUB7OXlfixcs6gsFeo/jhiQ==}
+    requiresBuild: true
+    peerDependencies:
+      bare-abort-controller: '*'
+    peerDependenciesMeta:
+      bare-abort-controller:
+        optional: true
+    dev: true
+    optional: true
+
+  /bare-fs@4.5.2:
+    resolution: {integrity: sha512-veTnRzkb6aPHOvSKIOy60KzURfBdUflr5VReI+NSaPL6xf+XLdONQgZgpYvUuZLVQ8dCqxpBAudaOM1+KpAUxw==}
     engines: {bare: '>=1.16.0'}
     requiresBuild: true
     peerDependencies:
@@ -1916,17 +1946,23 @@ packages:
       bare-events: 2.5.4
       bare-path: 3.0.0
       bare-stream: 2.6.5(bare-events@2.5.4)
+      bare-url: 2.3.2
+      fast-fifo: 1.3.2
+    transitivePeerDependencies:
+      - bare-abort-controller
     dev: true
     optional: true
 
   /bare-os@3.6.1:
     resolution: {integrity: sha512-uaIjxokhFidJP+bmmvKSgiMzj2sV5GPHaZVAIktcxcpCyBFFWO+YlikVAdhmUo2vYFvFhOXIAlldqV29L8126g==}
     engines: {bare: '>=1.14.0'}
+    requiresBuild: true
     dev: true
     optional: true
 
   /bare-path@3.0.0:
     resolution: {integrity: sha512-tyfW2cQcB5NN8Saijrhqn0Zh7AnFNsnczRcuWODH0eYAXBsJ5gVxAUuNr7tsHSC6IZ77cA0SitzT+s47kot8Mw==}
+    requiresBuild: true
     dependencies:
       bare-os: 3.6.1
     dev: true
@@ -1934,6 +1970,7 @@ packages:
 
   /bare-stream@2.6.5(bare-events@2.5.4):
     resolution: {integrity: sha512-jSmxKJNJmHySi6hC42zlZnq00rga4jjxcgNZjY9N5WlOe/iOoGRtdwGsHzQv2RlH2KOYMwGUXhf2zXd32BA9RA==}
+    requiresBuild: true
     peerDependencies:
       bare-buffer: '*'
       bare-events: '*'
@@ -1945,6 +1982,16 @@ packages:
     dependencies:
       bare-events: 2.5.4
       streamx: 2.22.0
+    transitivePeerDependencies:
+      - bare-abort-controller
+    dev: true
+    optional: true
+
+  /bare-url@2.3.2:
+    resolution: {integrity: sha512-ZMq4gd9ngV5aTMa5p9+UfY0b3skwhHELaDkhEHetMdX0LRkW9kzaym4oo/Eh+Ghm0CCDuMTsRIGM/ytUc1ZYmw==}
+    requiresBuild: true
+    dependencies:
+      bare-path: 3.0.0
     dev: true
     optional: true
 
@@ -2191,8 +2238,8 @@ packages:
     resolution: {integrity: sha512-6DnInpx7SJ2AK3+CTUE/ZM0vWTUboZCegxhC2xiIydHR9jNuTAASBrfEpHhiGOZw/nX51bHt6YQl8jsGo4y/0w==}
     engines: {node: '>= 0.6'}
 
-  /cookie@1.0.2:
-    resolution: {integrity: sha512-9Kr/j4O16ISv8zBBhJoi4bXOYNTkFLOqSL3UDB0njXxCXNezjeyVrJyGOWtgfs/q2km1gwBcfH8q1yEGoMYunA==}
+  /cookie@1.1.1:
+    resolution: {integrity: sha512-ei8Aos7ja0weRpFzJnEA9UHJ/7XQmqglbRwnf2ATjcB9Wq874VKH9kfjjirM6UhU2/E5fFYadylyhFldcqSidQ==}
     engines: {node: '>=18'}
 
   /core-util-is@1.0.3:
@@ -3522,6 +3569,7 @@ packages:
       typed-query-selector: 2.12.0
       ws: 8.18.1
     transitivePeerDependencies:
+      - bare-abort-controller
       - bare-buffer
       - bufferutil
       - supports-color
@@ -3541,6 +3589,7 @@ packages:
       puppeteer-core: 24.6.1
       typed-query-selector: 2.12.0
     transitivePeerDependencies:
+      - bare-abort-controller
       - bare-buffer
       - bufferutil
       - supports-color
@@ -3671,7 +3720,7 @@ packages:
       use-sidecar: 1.1.3(@types/react@19.1.0)(react@19.1.0)
     dev: true
 
-  /react-router-devtools@1.1.10(@types/react-dom@19.1.2)(@types/react@19.1.0)(react-dom@19.1.0)(react-router@7.5.0)(react@19.1.0)(vite@5.4.17):
+  /react-router-devtools@1.1.10(@types/react-dom@19.1.2)(@types/react@19.1.0)(react-dom@19.1.0)(react-router@7.12.0)(react@19.1.0)(vite@5.4.17):
     resolution: {integrity: sha512-/Lg0doiVq/Bv547SU4ZWE2UPUaNToGQ0Rnao0tWrZVvPfgGLMQJi4TLv3CxLrXFCo5QeZh0omJ1SCGXOZmpUUw==}
     peerDependencies:
       react: '>=17'
@@ -3697,13 +3746,13 @@ packages:
       react-diff-viewer-continued: 4.0.5(@types/react@19.1.0)(react-dom@19.1.0)(react@19.1.0)
       react-dom: 19.1.0(react@19.1.0)
       react-hotkeys-hook: 4.6.2(react-dom@19.1.0)(react@19.1.0)
-      react-router: 7.5.0(react-dom@19.1.0)(react@19.1.0)
+      react-router: 7.12.0(react-dom@19.1.0)(react@19.1.0)
       react-tooltip: 5.28.1(react-dom@19.1.0)(react@19.1.0)
       vite: 5.4.17(@types/node@20.14.11)
     optionalDependencies:
       '@biomejs/cli-darwin-arm64': 1.9.4
-      '@rollup/rollup-darwin-arm64': 4.39.0
-      '@rollup/rollup-linux-x64-gnu': 4.39.0
+      '@rollup/rollup-darwin-arm64': 4.55.1
+      '@rollup/rollup-linux-x64-gnu': 4.55.1
     transitivePeerDependencies:
       - '@emotion/is-prop-valid'
       - '@types/react'
@@ -3711,8 +3760,8 @@ packages:
       - supports-color
     dev: true
 
-  /react-router@7.5.0(react-dom@19.1.0)(react@19.1.0):
-    resolution: {integrity: sha512-estOHrRlDMKdlQa6Mj32gIks4J+AxNsYoE0DbTTxiMy2mPzZuWSDU+N85/r1IlNR7kGfznF3VCUlvc5IUO+B9g==}
+  /react-router@7.12.0(react-dom@19.1.0)(react@19.1.0):
+    resolution: {integrity: sha512-kTPDYPFzDVGIIGNLS5VJykK0HfHLY5MF3b+xj0/tTyNYL1gF1qs7u67Z9jEhQk2sQ98SUaHxlG31g1JtF7IfVw==}
     engines: {node: '>=20.0.0'}
     peerDependencies:
       react: '>=18'
@@ -3721,12 +3770,10 @@ packages:
       react-dom:
         optional: true
     dependencies:
-      '@types/cookie': 0.6.0
-      cookie: 1.0.2
+      cookie: 1.1.1
       react: 19.1.0
       react-dom: 19.1.0(react@19.1.0)
-      set-cookie-parser: 2.7.1
-      turbo-stream: 2.4.0
+      set-cookie-parser: 2.7.2
 
   /react-style-singleton@2.2.3(@types/react@19.1.0)(react@19.1.0):
     resolution: {integrity: sha512-b6jSvxvVnyptAiLjbkWLE/lOnR4lfTtDAl+eUC7RZy+QQWc6wRzIV2CE6xBuMmDxc2qIihtDCZD5NPOFl7fRBQ==}
@@ -3891,6 +3938,10 @@ packages:
 
   /set-cookie-parser@2.7.1:
     resolution: {integrity: sha512-IOc8uWeOZgnb3ptbCURJWNjWUPcO3ZnTTdzsurqERrP6nPyv+paC55vJM0LpOlT2ne+Ix+9+CRG1MNLlyZ4GjQ==}
+    dev: true
+
+  /set-cookie-parser@2.7.2:
+    resolution: {integrity: sha512-oeM1lpU/UvhTxw+g3cIfxXHyJRc/uidd3yK1P242gzHds0udQBYzs3y8j4gCCW+ZJ7ad0yctld8RYO+bdurlvw==}
 
   /setprototypeof@1.2.0:
     resolution: {integrity: sha512-E5LDX7Wrp85Kil5bhZv46j8jOeboKq5JMmYM3gVGdGH8xFpPWXUMsNrlODCrkoxMEeNi/XZIwuRvY4XNwYMJpw==}
@@ -4031,7 +4082,9 @@ packages:
       fast-fifo: 1.3.2
       text-decoder: 1.2.3
     optionalDependencies:
-      bare-events: 2.5.4
+      bare-events: 2.8.2
+    transitivePeerDependencies:
+      - bare-abort-controller
     dev: true
 
   /string-width@4.2.3:
@@ -4096,9 +4149,10 @@ packages:
       pump: 3.0.0
       tar-stream: 3.1.7
     optionalDependencies:
-      bare-fs: 4.1.2
+      bare-fs: 4.5.2
       bare-path: 3.0.0
     transitivePeerDependencies:
+      - bare-abort-controller
       - bare-buffer
     dev: true
 
@@ -4108,6 +4162,8 @@ packages:
       b4a: 1.6.7
       fast-fifo: 1.3.2
       streamx: 2.22.0
+    transitivePeerDependencies:
+      - bare-abort-controller
     dev: true
 
   /text-decoder@1.2.3:
@@ -4136,9 +4192,6 @@ packages:
   /tslib@2.5.3:
     resolution: {integrity: sha512-mSxlJJwl3BMEQCUNnxXBU9jP4JBktcEGhURcPR6VQVlnP0FdDEsIaz0C35dXNGLyRfrATNofF0F5p2KPxQgB+w==}
     dev: true
-
-  /turbo-stream@2.4.0:
-    resolution: {integrity: sha512-FHncC10WpBd2eOmGwpmQsWLDoK4cqsA/UT/GqNoaKOQnT8uzhtCbg3EoUDMvqpOSAI0S26mr0rkjzbOO6S3v1g==}
 
   /type-is@1.6.18:
     resolution: {integrity: sha512-TkRKr9sUTxEH8MdfuCSP7VizJyzRNMjj2J2do2Jr3Kym598JVdEksuzPQCnlFPW4ky9Q+iA+ma9BGm06XQBy8g==}
