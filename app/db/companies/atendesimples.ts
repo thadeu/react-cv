@@ -3,7 +3,7 @@ export const AtendeSimples = [
     role: "Senior Software Engineer (Rails & AWS)",
     company: "Atende Simples",
     location: "Full Remote",
-    date: "April 2018 - Present (2025)",
+    date: "April 2018 - Present (2026)",
     journey: [
       {
         title: "Technical Achievements",
